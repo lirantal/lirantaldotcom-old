@@ -29,15 +29,15 @@
           A
           <span
             class="
+              mx-1
               item-pointer
               yellow--text
               font-italic
               text-decoration-underline
             "
             @click="openLink('https://stars.github.com/profiles/lirantal')"
+            >GitHub Star</span
           >
-            GitHub Star
-          </span>
           recognized for activisim in open source communities and advancing web
           and Node.js security. Member of the Node.js Foundation ecosystem
           security working group, Project lead and contributor to the OWASP
