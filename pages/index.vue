@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-main>
     <v-row>
       <v-col class="text-center">
         <v-avatar size="180">
@@ -33,5 +33,5 @@
         </blockquote>
       </v-col>
     </v-row>
-  </v-content>
+  </v-main>
 </template>

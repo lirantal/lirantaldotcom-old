@@ -1,4 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+# ignore Snyk Code cache file
+.dccach
+
 ### Node template
 # Logs
 /logs
