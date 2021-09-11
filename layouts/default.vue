@@ -10,7 +10,10 @@
         </v-card>
 
         <v-card dark color="#121212" elevation="0" class="pa-2" tile>
-          <v-btn>
+          <v-btn
+            href="https://stars.github.com/profiles/lirantal"
+            target="_blank"
+          >
             <v-icon color="yellow">mdi-star</v-icon>
             <span>GitHub Star</span>
           </v-btn>

@@ -26,12 +26,40 @@
     <v-row justify="center">
       <v-col cols="7" class="text-center">
         <blockquote class="blockquote">
-          A GitHub Star, recognized for activisim in open source communities and
-          advancing web and Node.js security. Member of the Node.js Foundation
-          ecosystem security working group, Project lead and contributor to the
-          OWASP Foundation, and Developer Advocate at Snyk.
+          A
+          <span
+            class="
+              item-pointer
+              yellow--text
+              font-italic
+              text-decoration-underline
+            "
+            @click="openLink('https://stars.github.com/profiles/lirantal')"
+          >
+            GitHub Star
+          </span>
+          recognized for activisim in open source communities and advancing web
+          and Node.js security. Member of the Node.js Foundation ecosystem
+          security working group, Project lead and contributor to the OWASP
+          Foundation, and Developer Advocate at Snyk.
         </blockquote>
       </v-col>
     </v-row>
   </v-main>
 </template>
+
+<script>
+export default {
+  methods: {
+    openLink(url) {
+      return window.open(url, '_blank')
+    },
+  },
+}
+</script>
+
+<style lang="css" scoped>
+.item-pointer {
+  cursor: pointer;
+}
+</style>
