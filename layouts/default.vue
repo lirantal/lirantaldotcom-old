@@ -14,15 +14,22 @@
             href="https://stars.github.com/profiles/lirantal"
             target="_blank"
           >
-            <v-icon color="yellow">mdi-star</v-icon>
-            <span>GitHub Star</span>
+            <v-icon class="text-body-1" color="yellow">mdi-star</v-icon>
+            <span class="text-caption">GitHub Star</span>
           </v-btn>
         </v-card>
 
         <v-card dark color="#121212" elevation="0" class="pa-2" tile>
           <v-btn>
-            <v-icon color="green">mdi-heart</v-icon>
-            <span>Developer Advocate</span>
+            <v-icon class="text-body-1" color="green">mdi-heart</v-icon>
+            <span class="text-caption">Developer Advocate</span>
+          </v-btn>
+        </v-card>
+
+        <v-card dark color="#121212" elevation="0" class="pa-2" tile>
+          <v-btn>
+            <v-icon class="text-body-1" color="blue">mdi-code-tags</v-icon>
+            <span class="text-caption">Open Source</span>
           </v-btn>
         </v-card>
       </v-card>
