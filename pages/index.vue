@@ -23,8 +23,8 @@
       </v-col>
     </v-row>
 
-    <v-row>
-      <v-col class="text-center">
+    <v-row justify="center">
+      <v-col cols="7" class="text-center">
         <blockquote class="blockquote">
           A GitHub Star, recognized for activisim in open source communities and
           advancing web and Node.js security. Member of the Node.js Foundation
