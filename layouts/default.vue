@@ -27,7 +27,7 @@
         </v-card>
 
         <v-card dark color="#121212" elevation="0" class="pa-2" tile>
-          <v-btn>
+          <v-btn to="/opensource">
             <v-icon class="text-body-1" color="blue">mdi-code-tags</v-icon>
             <span class="text-caption">Open Source</span>
           </v-btn>
