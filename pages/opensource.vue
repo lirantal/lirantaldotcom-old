@@ -43,22 +43,11 @@
 
           <v-card-actions>
             <v-btn
+              icon
               href="https://github.com/lirantal/dockly"
               target="_blank"
-              color="orange"
-              text
             >
-              Explore
-            </v-btn>
-
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-bookmark</v-icon>
+              <v-icon>mdi-github</v-icon>
             </v-btn>
 
             <v-btn icon>
@@ -87,12 +76,15 @@
 
           <v-card-actions>
             <v-btn
+              icon
               href="https://github.com/lirantal/is-website-vulnerable"
               target="_blank"
-              color="orange"
-              text
             >
-              Explore
+              <v-icon>mdi-github</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>mdi-share-variant</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -116,13 +108,12 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn
-              href="https://github.com/lirantal/npq"
-              target="_blank"
-              color="orange"
-              text
-            >
-              Explore
+            <v-btn icon href="https://github.com/lirantal/npq" target="_blank">
+              <v-icon>mdi-github</v-icon>
+            </v-btn>
+
+            <v-btn icon>
+              <v-icon>mdi-share-variant</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
