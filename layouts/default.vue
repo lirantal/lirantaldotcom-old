@@ -32,6 +32,13 @@
             <span class="text-caption">Open Source</span>
           </v-btn>
         </v-card>
+
+        <v-card dark color="#121212" elevation="0" class="pa-2" tile>
+          <v-btn to="/recognitions">
+            <v-icon class="text-body-1" color="red">mdi-trophy</v-icon>
+            <span class="text-caption">Recognitions</span>
+          </v-btn>
+        </v-card>
       </v-card>
     </v-container>
 
