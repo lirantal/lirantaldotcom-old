@@ -89,6 +89,48 @@
           </v-card-text>
         </v-card>
       </v-col>
+
+      <v-col>
+        <v-card min-height="100%">
+          <v-card-title class="align-start">
+            <span>Relevany programming languages & technology stack</span>
+          </v-card-title>
+
+          <v-card-subtitle class="mb-6"> </v-card-subtitle>
+
+          <v-card-text>
+            <v-row>
+              <v-col>
+                <div>
+                  <p>Node.js</p>
+                  <v-progress-linear
+                    v-model="langNodeJSXP"
+                    color="green darken-3"
+                  ></v-progress-linear>
+                  <p>JavaScript</p>
+                  <v-progress-linear
+                    v-model="langJavaScriptXP"
+                    color="yellow accent-4"
+                  ></v-progress-linear>
+                  <br />
+                </div>
+                <div>
+                  <v-icon medium> mdi-nodejs </v-icon>
+                  <v-icon medium> mdi-npm </v-icon>
+                  <v-icon medium> mdi-language-javascript </v-icon>
+                  <v-icon medium> mdi-language-html5 </v-icon>
+                  <v-icon medium> mdi-vuejs </v-icon>
+                  <v-icon medium> mdi-vuetify </v-icon>
+                  <v-icon medium> mdi-vs-code </v-icon>
+                  <v-icon medium> mdi-bash </v-icon>
+                  <v-icon medium> mdi-docker </v-icon>
+                  <v-icon medium> mdi-firebase </v-icon>
+                </div>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
 
     <v-row>
@@ -239,6 +281,8 @@ export default {
 
     return {
       statisticsData,
+      langJavaScriptXP: 100,
+      langNodeJSXP: 100,
     }
   },
 
