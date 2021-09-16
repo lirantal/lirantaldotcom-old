@@ -141,12 +141,10 @@
 
     <v-row>
       <v-col class="text-center">
-        <v-btn icon link href="https://twitter.com/liran_tal" target="_blank">
-          <v-icon medium> mdi-twitter </v-icon>
-        </v-btn>
-        <v-btn icon link href="https://github.com/lirantal" target="_blank">
-          <v-icon medium> mdi-github </v-icon>
-        </v-btn>
+        <p>
+          Following are some of my most well known open source projects that you
+          can find on GitHub:
+        </p>
       </v-col>
     </v-row>
 
