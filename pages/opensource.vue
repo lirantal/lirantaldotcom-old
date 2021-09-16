@@ -1,15 +1,100 @@
 <template>
   <v-main>
     <v-row>
-      <v-col class="text-center">
-        <v-avatar size="180">
-          <img src="https://github.com/lirantal.png" alt="John" />
-        </v-avatar>
+      <v-col>
+        <v-card class="greeting-card" min-height="100%">
+          <v-row class="ma-0 pa-0">
+            <v-col>
+              <v-card-title class="pt-1 ps-2">
+                Liran Tal is a GitHub Star
+                <v-icon class="ml-1" color="yellow"> mdi-star </v-icon>
+              </v-card-title>
+              <v-card-subtitle class="ps-2">
+                On June, 2021, Liran was officially recognized and awarded to
+                GitHub's world-wide influencers Stars program
+              </v-card-subtitle>
+              <v-card-text class="d-flex align-center mt-2 pb-2 ps-2">
+                <div>
+                  <p class="text-xl font-weight-semibold primary--text mb-2">
+                    Inspire. Educate. Shape communities.
+                  </p>
+
+                  <v-btn
+                    href="https://twitter.com/github/status/1405191446232289287"
+                    target="_blank"
+                    small
+                    color="primary"
+                  >
+                    View on Twitter
+                  </v-btn>
+                </div>
+              </v-card-text>
+            </v-col>
+
+            <v-col cols="3">
+              <v-img
+                contain
+                height="120"
+                src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
+                class="greeting-card-bg"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+
+      <v-col>
+        <v-card min-height="100%">
+          <v-card-title class="align-start">
+            <span>GitHub open source contribution activity</span>
+            <v-spacer></v-spacer>
+          </v-card-title>
+
+          <v-card-subtitle class="mb-2">
+            <v-btn icon small class="mr-2">
+              <v-icon> mdi-github </v-icon>
+            </v-btn>
+            <span class="font-weight-semibold text--primary"
+              >https://github.com/lirantal</span
+            >
+          </v-card-subtitle>
+
+          <v-card-text>
+            <v-row>
+              <v-col>
+                <v-avatar size="80">
+                  <img src="https://github.com/lirantal.png" alt="Liran Tal" />
+                </v-avatar>
+              </v-col>
+              <v-col
+                v-for="data in statisticsData"
+                :key="data.title"
+                class="d-flex align-center"
+              >
+                <v-avatar color="black" rounded class="elevation-1">
+                  <v-icon dark :color="data.color">
+                    {{ data.icon }}
+                  </v-icon>
+                </v-avatar>
+                <div class="ms-3">
+                  <p class="text-xs mb-0">
+                    {{ data.title }}
+                  </p>
+                  <h3 class="text-xl font-weight-semibold">
+                    {{ data.total }}
+                  </h3>
+                </div>
+              </v-col>
+            </v-row>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
 
     <v-row>
-      <v-col class="text-center"> Hello, I'm Liran Tal 👋 </v-col>
+      <v-col class="text-center">
+        <v-divider></v-divider>
+      </v-col>
     </v-row>
 
     <v-row>
@@ -94,7 +179,7 @@
         <v-card class="mx-auto" max-width="360">
           <v-img
             class="white--text align-end"
-            src="https://github.com/lirantal/npq/raw/master/.github/npq-demo.gif?raw=true"
+            src="https://repository-images.githubusercontent.com/114298694/73d29f00-bb7d-11e9-80f5-5f94f25a76b4"
           >
           </v-img>
 
@@ -124,6 +209,39 @@
 
 <script>
 export default {
+  data() {
+    const statisticsData = [
+      {
+        title: 'Total Repositories',
+        total: '298',
+        icon: 'mdi-github',
+        color: 'white',
+      },
+      {
+        title: 'Total Stars',
+        total: '10.9k',
+        icon: 'mdi-star-shooting-outline',
+        color: 'yellow',
+      },
+      {
+        title: 'Total PRs',
+        total: '1.1k',
+        icon: 'mdi-source-pull',
+        color: 'green',
+      },
+      {
+        title: 'Contributed to',
+        total: '47 repos',
+        icon: 'mdi-code-tags',
+        color: 'blue',
+      },
+    ]
+
+    return {
+      statisticsData,
+    }
+  },
+
   methods: {
     openLink(url) {
       return window.open(url, '_blank')
@@ -132,7 +250,7 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .item-pointer {
   cursor: pointer;
 }
