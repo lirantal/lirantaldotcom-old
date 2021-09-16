@@ -1,5 +1,32 @@
 <template>
   <v-main>
+    <section id="block-quote">
+      <v-row justify="center">
+        <v-col cols="6">
+          <h2 class="v-heading text-h4 text-sm-h4 mb-4">
+            Community recognitions and testimonials
+          </h2>
+          <blockquote>
+            <p>
+              I'm thankful for being able to take an active part in communities
+              I'm passionte about, such as, web security, Node.js engineering
+              projects, and building command-line applications. I'm also
+              grateful for the opportunity to work with some of the best people
+              in the community, including the OWASP community members and
+              leadership, the broader Node.js Foundation and the Technical
+              Steering Committee members.
+            </p>
+            <p>
+              Perhaps best of all, I'm grateful for the opportunities I have
+              through my speaking engagement and other advocacy work that allow
+              me to inspire and help others. These are always my greatest source
+              of proud moments.
+            </p>
+          </blockquote>
+        </v-col>
+      </v-row>
+    </section>
+    <v-divider></v-divider>
     <v-timeline>
       <v-timeline-item
         color="#0084b4"
@@ -19,10 +46,13 @@
             <v-list-item class="grow">
               <v-list-item-avatar color="grey darken-3">
                 <v-img
+                  v-if="recognition.medium === 'twitter'"
                   @click="openLink('https://twitter.com/manicode')"
                   class="elevation-6 item-pointer"
                   :alt="recognition.name"
-                  :src="recognition.profile_image"
+                  :src="
+                    'https://unavatar.io/twitter/' + recognition.medium_username
+                  "
                 ></v-img>
               </v-list-item-avatar>
 
@@ -65,6 +95,7 @@ export default {
           name: 'Jim Manico',
           title: 'OWASP Leader',
           contact: 'https://twitter.com/manicode',
+          medium_username: 'manicode',
           profile_image:
             'https://pbs.twimg.com/profile_images/1128010737580818432/cw4SWqUx_400x400.jpg',
           testimonial: `What an honor. Thank you Liran. Some people talk about AppSec (me)
@@ -78,6 +109,7 @@ export default {
           name: 'Jose Aguinaga',
           title: 'Head of Engineering at @hoprnet',
           contact: 'https://twitter.com/jjperezaguinaga',
+          medium_username: 'jjperezaguinaga',
           profile_image:
             'https://pbs.twimg.com/profile_images/620137226232397824/-bCZ07sG_400x400.jpg',
           testimonial: `This is one of the best guides I've seen on this topic, really cool stuff. Definitely going to take a look at @snyksec's @github action to add it in our @hoprnet project.`,
@@ -89,6 +121,7 @@ export default {
           name: 'Dev Sharma',
           title: 'Software Developer',
           contact: 'https://twitter.com/cryptus_neoxys',
+          medium_username: 'cryptus_neoxys',
           profile_image:
             'https://pbs.twimg.com/profile_images/1373856007009411075/Dbfd_Bne_400x400.jpg',
           testimonial: `This has become my primary source for learning docker with node. Thanks for sharing these 💝`,
