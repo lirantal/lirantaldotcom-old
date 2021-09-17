@@ -13,7 +13,20 @@
                 On June, 2021, Liran was officially recognized and awarded to
                 GitHub's world-wide influencers Stars program
               </v-card-subtitle>
-              <v-card-text class="d-flex align-center mt-2 pb-2 ps-2">
+            </v-col>
+
+            <v-col cols="3">
+              <v-img
+                contain
+                height="120"
+                src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
+                class="greeting-card-bg"
+              ></v-img>
+            </v-col>
+          </v-row>
+          <v-row class="ma-0 pa-0">
+            <v-col>
+              <v-card-actions class="d-flex align-center mt-2 pb-2 ps-2">
                 <div>
                   <p class="text-xl font-weight-semibold primary--text mb-2">
                     Inspire. Educate. Shape communities.
@@ -28,16 +41,7 @@
                     View on Twitter
                   </v-btn>
                 </div>
-              </v-card-text>
-            </v-col>
-
-            <v-col cols="3">
-              <v-img
-                contain
-                height="120"
-                src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
-                class="greeting-card-bg"
-              ></v-img>
+              </v-card-actions>
             </v-col>
           </v-row>
         </v-card>
