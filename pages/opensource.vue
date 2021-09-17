@@ -118,6 +118,7 @@
                     v-model="langNodeJSXP"
                     color="green darken-3"
                   ></v-progress-linear>
+                  <br />
                   <p>JavaScript</p>
                   <v-progress-linear
                     v-model="langJavaScriptXP"
