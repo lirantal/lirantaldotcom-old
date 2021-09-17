@@ -29,9 +29,9 @@
     <v-divider></v-divider>
     <v-timeline>
       <v-timeline-item
-        color="#0084b4"
         v-for="recognition in recognitions"
         :key="recognition.href"
+        color="#0084b4"
       >
         <v-card class="mx-auto" color="" dark max-width="600">
           <v-card-title> </v-card-title>
@@ -46,20 +46,17 @@
             <v-list-item class="grow">
               <v-list-item-avatar color="grey darken-3">
                 <v-img
-                  v-if="recognition.medium === 'twitter'"
-                  @click="openLink('https://twitter.com/manicode')"
                   class="elevation-6 item-pointer"
                   :alt="recognition.name"
-                  :src="
-                    'https://unavatar.io/twitter/' + recognition.medium_username
-                  "
+                  :src="recognition.profile_image"
+                  @click="openLink('https://twitter.com/manicode')"
                 ></v-img>
               </v-list-item-avatar>
 
               <v-list-item-content>
                 <v-list-item-title
-                  @click="openLink(recognition.contact)"
                   class="item-pointer"
+                  @click="openLink(recognition.contact)"
                   >{{ recognition.name
                   }}<span v-if="recognition.title"
                     >, {{ recognition.title }}</span
