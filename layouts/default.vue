@@ -3,7 +3,7 @@
     <v-container>
       <v-card dark color="#121212" class="d-flex mb-6" flat tile>
         <v-card dark color="#121212" elevation="0" class="mr-auto pa-2" tile>
-          <v-btn>
+          <v-btn to="/">
             <v-icon>mdi-home</v-icon>
             <span>Home</span>
           </v-btn>
