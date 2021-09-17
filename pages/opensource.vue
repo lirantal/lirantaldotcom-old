@@ -22,16 +22,24 @@
               </v-card-subtitle>
             </v-col>
 
-            <v-col cols="3">
+            <!-- <v-col cols="2">
               <v-img
                 contain
-                height="120"
+                height="80"
+                src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
+                class="greeting-card-bg mt-14"
+              ></v-img>
+            </v-col> -->
+          </v-row>
+          <v-row class="ma-0 pa-0">
+            <v-col cols="2">
+              <v-img
+                contain
+                height="80"
                 src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
                 class="greeting-card-bg"
               ></v-img>
             </v-col>
-          </v-row>
-          <v-row class="ma-0 pa-0">
             <v-col>
               <v-card-actions class="d-flex align-center pb-2 ps-2">
                 <div>
@@ -57,26 +65,29 @@
       <v-col>
         <v-card min-height="100%">
           <v-card-title class="align-start">
-            <span>GitHub open source contribution activity</span>
+            <span>Open source contribution</span>
             <v-spacer></v-spacer>
           </v-card-title>
 
-          <v-card-subtitle class="mb-2">
-            <v-btn icon small class="mr-2">
-              <v-icon> mdi-github </v-icon>
-            </v-btn>
-            <span class="font-weight-semibold text--primary"
-              >https://github.com/lirantal</span
-            >
-          </v-card-subtitle>
+          <v-card-subtitle class="mb-2"> </v-card-subtitle>
 
           <v-card-text>
-            <v-row>
-              <v-col>
+            <v-row justify="center">
+              <v-col class="text-center">
                 <v-avatar size="80">
                   <img src="https://github.com/lirantal.png" alt="Liran Tal" />
                 </v-avatar>
               </v-col>
+              <v-col class="mt-4">
+                <v-btn icon small class="mr-2">
+                  <v-icon> mdi-github </v-icon>
+                </v-btn>
+                <span class="font-weight-semibold text--primary"
+                  >https://github.com/lirantal</span
+                >
+              </v-col>
+            </v-row>
+            <v-row>
               <v-col
                 v-for="data in statisticsData"
                 :key="data.title"
@@ -104,7 +115,7 @@
       <v-col>
         <v-card min-height="100%">
           <v-card-title class="align-start">
-            <span>Relevany programming languages & technology stack</span>
+            <span>Tech'</span>
           </v-card-title>
 
           <v-card-subtitle class="mb-6"> </v-card-subtitle>
@@ -282,7 +293,7 @@ export default {
         color: 'green',
       },
       {
-        title: 'Contributed to',
+        title: 'Contributed',
         total: '47 repos',
         icon: 'mdi-code-tags',
         color: 'blue',
