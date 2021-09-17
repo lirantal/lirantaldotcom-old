@@ -10,8 +10,15 @@
                 <v-icon class="ml-1" color="yellow"> mdi-star </v-icon>
               </v-card-title>
               <v-card-subtitle class="ps-2">
-                On June, 2021, Liran was officially recognized and awarded to
-                GitHub's world-wide influencers Stars program
+                <p>
+                  On June, 2021, Liran was officially recognized and awarded to
+                  GitHub's world-wide influencers Stars program.
+                </p>
+
+                <p>
+                  Liran is the first, and currently the only member of the
+                  GitHub Stars program to be recognized in Israel 🇮🇱
+                </p>
               </v-card-subtitle>
             </v-col>
 
@@ -26,7 +33,7 @@
           </v-row>
           <v-row class="ma-0 pa-0">
             <v-col>
-              <v-card-actions class="d-flex align-center mt-2 pb-2 ps-2">
+              <v-card-actions class="d-flex align-center pb-2 ps-2">
                 <div>
                   <p class="text-xl font-weight-semibold primary--text mb-2">
                     Inspire. Educate. Shape communities.
