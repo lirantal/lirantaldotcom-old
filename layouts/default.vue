@@ -20,7 +20,7 @@
         </v-card>
 
         <v-card dark color="#121212" elevation="0" class="pa-2" tile>
-          <v-btn>
+          <v-btn href="https://www.snyk.io" target="_blank">
             <v-icon class="text-caption" color="green">mdi-heart</v-icon>
             <span class="text-caption">Developer Advocate</span>
           </v-btn>
