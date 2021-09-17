@@ -9,7 +9,20 @@
     </v-row>
 
     <v-row>
-      <v-col class="text-center"> Hello, I'm Liran Tal 👋 </v-col>
+      <v-col class="text-center">
+        Hello, I'm Liran Tal
+        <v-icon medium color="white">mdi-hand-wave-outline</v-icon>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col class="text-center mb-n5">
+        <span class="green--text"> Software Engineer </span>
+        ·
+        <span class="red--text"> Web Security Activist </span>
+        ·
+        <span class="yellow--text"> Open Source Software Champion </span>
+      </v-col>
     </v-row>
 
     <v-row>
@@ -20,11 +33,19 @@
         <v-btn icon link href="https://github.com/lirantal" target="_blank">
           <v-icon medium> mdi-github </v-icon>
         </v-btn>
+        <v-btn
+          icon
+          link
+          href="https://www.linkedin.com/in/talliran/"
+          target="_blank"
+        >
+          <v-icon medium> mdi-linkedin </v-icon>
+        </v-btn>
       </v-col>
     </v-row>
 
     <v-row justify="center">
-      <v-col cols="7" class="text-center">
+      <v-col cols="8" class="text-center">
         <blockquote class="blockquote">
           A
           <span
@@ -37,12 +58,75 @@
             "
             @click="openLink('https://stars.github.com/profiles/lirantal')"
             >GitHub Star</span
+          >, world-wide recognized for championing open source software and
+          actively working within communities to inspire and lift other humans.
+          <span
+            class="
+              mx-1
+              item-pointer
+              green--text
+              font-italic
+              text-decoration-underline
+            "
+            @click="openLink('https://github.com/nodejs/security-wg')"
+            >A JavaScript & Node.js software developer, building web
+            applications and command-line tools.</span
           >
-          recognized for activisim in open source communities and advancing web
-          and Node.js security. Member of the Node.js Foundation ecosystem
-          security working group, Project lead and contributor to the OWASP
-          Foundation, and Developer Advocate at Snyk.
+
+          <span
+            class="
+              mx-1
+              item-pointer
+              red--text
+              font-italic
+              text-decoration-underline
+            "
+            @click="openLink('https://owasp.org/www-project-cwe-toolkit')"
+            >A web security activist
+          </span>
+          , engaging in security research, software supply chain security, and
+          regular contributor and project lead to OWASP Foundation projects.
+          <span
+            class="
+              mx-1
+              item-pointer
+              red--text
+              font-italic
+              text-decoration-underline
+            "
+            @click="openLink('https://github.com/nodejs/security-wg')"
+            >An avid member of the Node.js Foundation ecosystem security working
+            group</span
+          >, dedicated to advancing Node.js security awareness and skillset in
+          the open source community.
+          <span
+            class="
+              mx-1
+              item-pointer
+              purple--text
+              darken-4
+              font-italic
+              text-decoration-underline
+            "
+            @click="openLink('https://snyk.io')"
+            >Developer Advocate at Snyk</span
+          >.
         </blockquote>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col class="text-center mb-n5">
+        <v-chip class="text-caption" label> OWASP Project Leader </v-chip>
+        <v-chip class="text-caption" label> Public Spekaer </v-chip>
+        <v-chip class="text-caption" label> O'Reilly Author </v-chip>
+        <v-chip class="text-caption" label>
+          Node.js Foundation Security WG Warrior
+        </v-chip>
+        <v-chip class="text-caption" label>
+          Docker Container Security Hero
+        </v-chip>
+        <v-chip class="text-caption" label> Command-line Apps Knight </v-chip>
       </v-col>
     </v-row>
   </v-main>

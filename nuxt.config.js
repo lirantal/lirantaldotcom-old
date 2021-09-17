@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - lirantaldotcom',
-    title: 'lirantaldotcom',
+    titleTemplate: '%s - Liran Tal',
+    title: 'Liran Tal',
     htmlAttrs: {
       lang: 'en'
     },
