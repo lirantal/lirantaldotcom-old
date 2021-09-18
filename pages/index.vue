@@ -44,7 +44,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center">
+    <v-row justify="center mx-n16">
       <v-col cols="8" class="text-center">
         <blockquote class="blockquote">
           A
@@ -116,17 +116,19 @@
     </v-row>
 
     <v-row>
-      <v-col class="text-center mb-n5">
-        <v-chip class="text-caption" label> OWASP Project Leader </v-chip>
-        <v-chip class="text-caption" label> Public Spekaer </v-chip>
-        <v-chip class="text-caption" label> O'Reilly Author </v-chip>
-        <v-chip class="text-caption" label>
+      <v-col class="text-center">
+        <v-chip class="text-caption ma-1" label> OWASP Project Leader </v-chip>
+        <v-chip class="text-caption ma-1" label> Public Spekaer </v-chip>
+        <v-chip class="text-caption ma-1" label> O'Reilly Author </v-chip>
+        <v-chip class="text-caption ma-1" label>
           Node.js Foundation Security WG Warrior
         </v-chip>
-        <v-chip class="text-caption" label>
+        <v-chip class="text-caption ma-1" label>
           Docker Container Security Hero
         </v-chip>
-        <v-chip class="text-caption" label> Command-line Apps Knight </v-chip>
+        <v-chip class="text-caption ma-1" label>
+          Command-line Apps Knight
+        </v-chip>
       </v-col>
     </v-row>
   </v-main>
