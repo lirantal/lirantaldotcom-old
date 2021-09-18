@@ -21,15 +21,6 @@
                 </p>
               </v-card-subtitle>
             </v-col>
-
-            <!-- <v-col cols="2">
-              <v-img
-                contain
-                height="80"
-                src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/trophy.png"
-                class="greeting-card-bg mt-14"
-              ></v-img>
-            </v-col> -->
           </v-row>
           <v-row class="ma-0 pa-0">
             <v-col cols="2">
@@ -78,7 +69,7 @@
                   <img src="https://github.com/lirantal.png" alt="Liran Tal" />
                 </v-avatar>
               </v-col>
-              <v-col class="mt-4">
+              <v-col class="mt-6">
                 <v-btn icon small class="mr-2">
                   <v-icon> mdi-github </v-icon>
                 </v-btn>
@@ -137,7 +128,7 @@
                   ></v-progress-linear>
                   <br />
                 </div>
-                <div>
+                <div class="mt-4">
                   <v-icon medium> mdi-nodejs </v-icon>
                   <v-icon medium> mdi-npm </v-icon>
                   <v-icon medium> mdi-language-javascript </v-icon>
