@@ -1,5 +1,5 @@
 <template>
-  <v-main>
+  <v-container class="mt-1">
     <v-row>
       <v-col class="text-center">
         <v-avatar size="180">
@@ -44,8 +44,8 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center mx-n16">
-      <v-col cols="8" class="text-center">
+    <v-row justify="center">
+      <v-col cols="12" lg="10" class="text-center">
         <blockquote class="blockquote">
           A
           <span
@@ -131,7 +131,7 @@
         </v-chip>
       </v-col>
     </v-row>
-  </v-main>
+  </v-container>
 </template>
 
 <script>
