@@ -135,6 +135,19 @@ export default {
             'https://pbs.twimg.com/profile_images/1512047671552450565/fQvrbswJ_400x400.jpg',
           testimonial: `After being in a workshop by @liran_tal and realizing that RegExps can be exploited fairly easily, I decided to use a validation library. I even contributed to the @DefinitelyTyped definition of it :D`,
         },
+        {
+          type: 'web-security-activism',
+          medium: 'twitter',
+          href: 'https://twitter.com/openjsf/status/1537197087481155584?s=20&t=oiJKv5-SMjpa1XfwYnGWEA',
+          name: 'OpenJS Foundation',
+          title: 'JavaScriptLandia Pathfinder Security Award to Liran Tal',
+          contact: 'https://twitter.com/openjsf/status/1537197087481155584',
+          medium_username: 'openjsf',
+          profile_image:
+            'https://pbs.twimg.com/profile_images/1546893445385465856/KvSGfgxj_400x400.jpg',
+          testimonial: `JavaScriptLandia Pathfinder Security Award to Liran Tal`,
+          preview_image: 'https://pbs.twimg.com/media/FUqh6KZXsAAcx6B?format=jpg&name=large',
+        },
       ],
     }
   },
